@@ -10,7 +10,7 @@ describe('Smoke test:', () => {
         async () => {
             await BrowserSession.startTest(url, false)
             await GitHubLogin.mainPage(username, email)
-            // await GitHubLogin.signInPage(emailAddress, password)
+            await GitHubLogin.signInPage(emailAddress, password)
         }
     );
 
